@@ -1,3 +1,3 @@
-# LCC-Website
+# LCC Website
 
 # latino.mit.edu
