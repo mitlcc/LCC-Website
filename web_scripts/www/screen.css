@@ -1,0 +1,470 @@
+body {
+	margin:0;
+	padding:0;
+	border:0;			/* This removes the border around the viewport in old versions of IE */
+	width:100%;
+	background:#fff;
+	min-width:600px;    	/* Minimum width of layout - remove line if not required */
+					/* The min-width property does not work in old versions of Internet Explorer */
+	font-size:95%;
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+}
+a:link {
+	color:#7f1a1a;
+	text-decoration:none;
+}
+a:hover {
+	color:#21B6A8;
+	text-decoration:none;
+}
+
+
+
+
+#box a {
+	color:#000;
+}
+#box a:hover {
+	color:#FFF;
+	background:#369;
+	text-decoration:none;
+}
+h1, h2, h3 {
+	margin:.8em 0 .2em 0;
+	padding:0;
+}
+p {
+	margin:.4em 0 .8em 0;
+	padding:0;
+}
+img {
+	margin:10px 0 5px;
+}
+#ads img {
+	display:block;
+	padding-top:10px;
+}
+
+/* Header styles */
+#header {
+	clear:both;
+	float:left;
+	width:100%;
+}
+
+#header p,
+#header h1,
+#header h2 {
+	padding:.4em 15px 0 15px;
+	margin:0;
+}
+#header ul {
+	clear:left;
+	float:left;
+	width:100%;
+	list-style:none;
+	margin:10px 0 0 0;
+	padding:0;
+}
+#header ul li {
+	display:inline;
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+#header ul li a {
+	display:block;
+	float:left;
+	margin:0 0 0 1px;
+	padding:3px 10px;
+	text-align:center;
+	background:#eee;
+	color:#000;
+	text-decoration:none;
+	position:relative;
+	left:15px;
+	line-height:1.3em;
+}
+#header ul li a:hover {
+	background:#369;
+	color:#fff;
+}
+#header ul li a.active,
+#header ul li a.active:hover {
+	color:#fff;
+	background:#000;
+	font-weight:bold;
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+}
+#header ul li a span {
+	display:block;
+}
+/* 'widths' sub menu */
+#layoutdims {
+	clear:both;
+	background:#eee;
+	border-top:4px solid #000;
+	margin:0;
+	padding:6px 15px !important;
+	text-align:right;
+}
+/* column container */
+.colmask {
+	position:relative;	/* This fixes the IE7 overflow hidden bug */
+	clear:both;
+	float:left;
+	width:100%;			/* width of whole page */
+	overflow:hidden;		/* This chops off any overhanging divs */
+}
+/* common column settings */
+.colright,
+.colmid,
+.colleft {
+	float:left;
+	width:100%;
+	position:relative;
+}
+.col1,
+.col2,
+.col3, 
+.box1{
+	float:left;
+	position:relative;
+	padding:0 0 1em 0;
+	overflow:hidden;
+}
+/* 2 Column (left menu) settings */
+.leftmenu {
+	background:#fff;		/* right column background colour */
+}
+.leftmenu .colleft {
+	right:75%;			/* right column width */
+	background:#fff;	/* left column background colour */
+    border-style:solid;
+	border-width:2px;
+    border-color:#FFF #FFA500 #FFF #FFF ;
+    
+}
+.leftmenu .col1 {
+	width:71%;			/* right column content width */
+	left:102%;			/* 100% plus left column left padding */
+}
+.leftmenu .col2 {
+	width:21%;			/* left column content width (column width minus left and right padding) */
+	left:6%;			/* (right column left and right padding) plus (left column left padding) */
+}
+
+.leftmenu .box1 {
+	width:80%;			/* left column content width (column width minus left and right padding) */
+	padding:2px 2px 2px 2px;			/* (right column left and right padding) plus (left column left padding) */
+	background:#FFF;
+	border-style:solid;
+	border-width:2px;
+    border-color:#FFA500 #FFF #FFF ;
+	margin:5px 5px 2px 2px;
+	padding-left:2em;
+	display: block;}
+
+/* Footer styles */
+#footer {
+	clear:both;
+	float:left;
+	width:100%;
+	border-top:1px solid #000;
+}
+#footer p {
+	padding:10px;
+	margin:0;
+}
+
+div#vmenu { 
+   margin: 0; 
+   padding: .25em 0em .25em 0em; 
+   background: #fcac4c; 
+   width: 20em; 
+} 
+
+div#vmenu ul { 
+   margin: 0; 
+   padding: 0; 
+   list-style: none; 
+} 
+
+div#vmenu ul li { 
+   margin: 0; 
+   padding: 0; 
+   list-style: none; 
+} 
+
+div#vmenu ul a:link { 
+   margin: 0; 
+   padding: .2em 0em .2em .4em; 
+   text-decoration: none; 
+   font-weight: bold; 
+   font-size: large;
+   font-family:"Trebuchet MS", Helvetica, sans-serif;
+   background-color: #FFF; 
+   color: #000000; 
+   display: block; 
+} 
+
+div#vmenu ul a:active { 
+   margin: 0; 
+   padding: .25em .5em .25em .5em; 
+   text-decoration: none; 
+   font-weight: bold;
+   font-size: large;
+   font-family:"Trebuchet MS", Helvetica, sans-serif;
+   background: #21B6A8;
+   color: #ffffff; 
+   display: block; 
+} 
+
+div#vmenu ul a:visited { 
+   margin: 0; 
+   padding:  .25em .5em .25em .5em; 
+   text-decoration: none; 
+   font-weight: bold; 
+   font-size: large;
+   font-family:"Trebuchet MS", Helvetica, sans-serif;
+   background: #21B6A8;
+   color: #ffffff; 
+   display: block; 
+} 
+
+div#vmenu ul li a:hover { 
+   margin: 0; 
+   padding: .2em 0em .2em .4em; 
+   text-decoration: none; 
+   font-weight: bold; 
+   font-size: large;
+   font-family:"Trebuchet MS", Helvetica, sans-serif;
+   background-color: #7f1a1a; 
+   color: #ffffff; 
+   display: block; 
+} 
+
+.board_image{
+	float: left;
+	height: 100px;
+	margin: 5px;
+}
+
+
+/* Slideshow */
+
+.slideshow {
+	display: block;
+	position: relative;
+	z-index: 0;
+}
+.slideshow-images {
+	display: block;
+	overflow: hidden;
+	position: relative;
+}		
+.slideshow-images img {
+	display: block;
+	position: absolute;
+	z-index: 1;
+}		
+.slideshow-thumbnails {
+	overflow: hidden;
+}
+
+/**
+Notes:
+	These are examples of user-defined styles.
+	Customize these classes to your usage of Slideshow.
+*/
+
+.slideshow {
+	width: 664px;
+	height: 504px;
+	margin: 0 auto;
+	background: url("../images/back.png") no-repeat scroll 0 0 transparent; 
+}
+.slideshow a img {
+	border: 0;
+}
+/**
+HTML:
+	<div class="slideshow-images">
+		<img />
+		<img />
+	</div>
+	
+Notes:
+	The images div is where the slides are shown.
+	Customize the visible / prev / next classes to effect the slideshow transitions: fading, wiping, etc.
+*/
+
+.slideshow-images {
+	width: 640px;
+	height: 480px;
+	left: 12px;
+	top: 12px;
+}		
+.slideshow-images-visible { 
+	opacity: 1;
+}	
+.slideshow-images-prev { 
+	opacity: 0; 
+}
+.slideshow-images-next { 
+	opacity: 0; 
+}
+.slideshow-images img {
+	float: left;
+	left: 0;
+	top: 0;
+	position: static;
+}
+/**
+HTML:
+	<div class="slideshow-thumbnails">
+		<ul>
+			<li><a class="slideshow-thumbnails-active" /></li>
+			<li><a class="slideshow-thumbnails-inactive" /></li>
+			...
+			<li><a class="slideshow-thumbnails-inactive" /></li>
+		</ul>
+	</div>
+	
+Notes:
+	Customize the active / inactive classes to affect the thumbnails animation.
+	Use the !important keyword to override FX without affecting performance.
+*/
+
+.slideshow-thumbnails * {
+	margin: 0;
+	padding: 0;
+}
+.slideshow-thumbnails li {
+	float: left;
+	list-style: none;
+	margin: 5px 5px 5px 0;
+	position: relative;
+}
+.slideshow-thumbnails a {
+	display: block;
+	float: left;
+	padding: 5px;
+	position: relative; 
+}
+.slideshow-thumbnails a:hover {
+	background-color: #FF9 !important;
+	opacity: 1 !important;
+}
+.slideshow-thumbnails img {
+	display: block;
+}
+.slideshow-thumbnails-active {
+	background-color: #9FF;
+	opacity: 1;
+}
+.slideshow-thumbnails-inactive {
+	background-color: #FFF;
+	opacity: .5;
+}.slideshow-thumbnails {
+	bottom: -110px;
+	height: 110px;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	overflow: auto;
+}
+.slideshow-thumbnails ul {
+	height: 90px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 32265px;
+}
+.slideshow{
+	margin-bottom:110px;
+}
+/**
+HTML:
+	<div class="slideshow-controller">
+		<ul>
+			<li class="first"><a /></li>
+			<li class="prev"><a /></li>
+			<li class="pause play"><a /></li>
+			<li class="next"><a /></li>
+			<li class="last"><a /></li>
+		</ul>
+	</div>
+	
+Notes:
+	Customize the hidden / visible classes to affect the controller animation.
+*/
+
+.slideshow-controller {
+	background: url(../images/controller.png) no-repeat;
+	height: 42px;
+	left: 50%;
+	margin: -21px 0 0 -119px;
+	overflow: hidden;
+	position: absolute;
+	bottom: 10%;
+	width: 238px;
+	z-index: 10000;
+}
+.slideshow-controller * {
+	margin: 0;
+	padding: 0;
+}
+.slideshow-controller-hidden { 
+	opacity: 0;
+}
+.slideshow-controller-visible {
+	opacity: 1;
+}
+.slideshow-controller a {
+	cursor: pointer;
+	display: block;
+	height: 18px;
+	overflow: hidden;
+	position: absolute;
+	top: 12px;
+}
+.slideshow-controller a.active {
+	background-position: 0 18px;
+}
+.slideshow-controller li {
+	list-style: none;
+}
+.slideshow-controller li.first a {
+	background-image: url(../images/controller-first.gif);
+	left: 33px;
+	width: 19px;
+}
+.slideshow-controller li.last a {
+	background-image: url(../images/controller-last.gif);
+	left: 186px;
+	width: 19px;
+}
+.slideshow-controller li.next a {
+	background-image: url(../images/controller-next.gif);
+	left: 145px;
+	width: 28px;
+}
+.slideshow-controller li.pause a {
+	background-image: url(../images/controller-pause.gif);
+	left: 109px;
+	width: 20px;
+}
+.slideshow-controller li.play a {
+	background-position: 20px 0;
+}
+.slideshow-controller li.play a.active {
+	background-position: 20px 18px;
+}
+.slideshow-controller li.prev a {
+	background-image: url(../images/controller-prev.gif);
+	left: 65px;
+	width: 28px;
+}
+
+

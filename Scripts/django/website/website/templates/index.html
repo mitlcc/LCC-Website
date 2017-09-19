@@ -1,0 +1,23 @@
+{% extends "template.html" %} 
+{% block body %}
+	<h1 class="title">Mission Statement</h1>
+	<p class="statement">
+		Our mission is to promote and support Latino culture at MIT by 
+		providing a bridge between Latino organizations in order to 
+		build a stronger community within the institute. 
+	</p>
+
+	{% if entries %}
+		<h1 class="title">Latest News</h1>
+		{% for entry in entries %}
+			<p class="facebook">{{ entry }}</p>
+		{% endfor %}
+	{% endif %}
+	<h1 class="title">Location</h1>
+	<p class="statement">
+	The Latino Cultural Center is located in the basement of MIT's 
+	Student Center, Building W20. There is a spacious lounge (W20-001) 
+	and an office with computers (W20-028). Both are open to all members 
+	of the MIT community. Please come visit us!
+	</p>
+{% endblock %}

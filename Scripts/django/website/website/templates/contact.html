@@ -1,0 +1,52 @@
+{% extends "template.html" %} 
+
+{% load staticfiles %}
+{% block body %}
+	<h1 class="title">Executive Board</h1>
+	<p class="statement">
+		E-mail: <a href="mailto:lcc-exec@mit.edu">lcc-exec@mit.edu</a>
+	</p>
+	<h2>Members</h2>	 
+	<ul id="contacts">
+		<li class="board">
+			President: Kenya Mejia
+			<img src="{% static 'images/board/kenya.png' %}" class="board_image"></img>
+		</li>
+		<li class="board">
+			Vice-President: Diana Rosales
+			<img src="{% static 'images/board/diana.jpg' %}" class="board_image"></img>
+		</li>
+		<li class="board">
+			Director of Funding: Joshua Maldonado
+			<img src="{% static 'images/board/joshua.jpg' %}" class="board_image"></img>		
+		</li>
+		<li>
+			Director of Latino Leaders Assembly: N/A
+		</li>
+		<li>
+			Historian: N/A
+		</li>
+		<li class="board">
+			Director of Publicity: Perla Villareal
+			<img src="{% static 'images/board/perla_villareal.png' %}" class="board_image"></img> 
+		</li>
+		<li class="board">
+			Director of Operations: Diana Valero
+			<img src="{% static 'images/board/diana_valero.png' %}" class="board_image"></img>
+		</li>
+		<li class="board">
+			Space Manager: Rebecca De Las Cuevas
+			<img src="{% static 'images/board/rebecca_de_las_cuevas.jpg' %}" class="board_image"></img>
+		<li>Graduate Assistant: Jeanette Plasencia
+		
+		</li>
+	</ul>
+	
+	<h1 class="title">Location</h1>
+	<p class="statement">
+	The Latino Cultural Center is located in the basement of MIT's 
+	Student Center, Building W20. There is a spacious lounge (W20-001) 
+	and an office with computers (W20-028). Both are open to all members 
+	of the MIT community. Please come visit us!
+	</p>
+{% endblock %}
