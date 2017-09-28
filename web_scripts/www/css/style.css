@@ -314,6 +314,11 @@ section.section {
 	padding-top: 60px;
 }
 
+.last_section {
+	margin:0;
+	padding: 60px 0 60px 0;
+}
+
 .bg-white {
 	background-color: #fff;
 }
